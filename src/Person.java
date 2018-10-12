@@ -28,19 +28,19 @@ public class Person {
     }
 
 
-    static void firstNameCorrect(String firstName)  {
+    static void firstNameCorrect(String firstName) throws NameUndefinedException {
         if (firstName == null || firstName.length() < 2) {
             throw new NameUndefinedException();
         }
     }
 
-    static void lastNameCorrect(String lastName)  {
+    static void lastNameCorrect(String lastName)  throws  NameUndefinedException {
         if (lastName == null || lastName.length() < 2) {
             throw new NameUndefinedException();
         }
     }
 
-    static void ageCorrect(int age)  {
+    static void ageCorrect(int age) throws  IncorrectAgeException  {
         if (age <= 1) {
             throw new IncorrectAgeException();
 
